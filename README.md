@@ -1,2 +1,11 @@
-# orens quest
-a game that uses math to attack enemys. made to be run in the web with react and phaser as the main backends
+# Orens Quest Plans 
+make a game that will be hosted on the web with the basic idea about using math to attack and hit enemys. with the basic game engine phaser written in typescript. We will be able to make a semi open world game with a deep story line following the hero Oren who has to save to world.(hoping to be kinda like zelda). 
+# art style
+## <img width="506" height="506" alt="Screenshot 2026-11-01 221306" src="https://github.com/user-attachments/assets/85727356-c30d-4f0c-960c-477fb67742d5" />
+I hope to get help for the community to make art in a pixel art style that will have deep color to emphasis the emotion of the world and really get people into the world. NO AI
+# time line
+i hope to release this by the end of my senior year. i hoping to get a cyber security mentorship and this would be a great thing to put on there. i also hope to release a steam full desktop version of it with increased graphical power and maybe a more cool ideas that would be to hard to add to a wed development game. also i want to go to a hackathon to meet other with a programming interest
+# links 
+### [Discord](discord.gg/p8cxgTR4uy)
+### [Youtube](https://www.youtube.com/channel/UCuBCqjk81BdTKJGwGbPI32g)
+
