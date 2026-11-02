@@ -1,0 +1,54 @@
+# setup
+    - make file tree    {done - 11-1-2026}
+    - make main outline for pages {done - 11-1-2026}
+    - make all librays work togther {done - 11-1-2026}
+    - make repo on git {done - 11-1-2026}
+    - make first video about development
+# guide page
+    - add full step by step
+    - image of the full playthrought
+    - polish 
+    - make a lock so it only show after you get to that part
+# game page
+    - phaser <canvas> item
+    - settings pop up
+    - add auto hide to top bar
+    - polish
+# main page
+    - make it welcoming
+    - links (discord, youtube, github, others)
+    - polish
+# style pages
+    - all pages same
+    - last big chech
+    - add images and art
+# game logic
+    - add graphing math to game 
+    - add tile map 
+    - add ai to the bots
+    - add storyline
+    - add player movement 
+    - add town and loading zones
+    - add sprite sheets loader into game
+    - make easly scallible
+# game art
+    - make player sprite 16 x 16
+    - make bot skins 16 x 16
+    - make titles that can be pasted around
+    - make music (battle, background, sound affects, other)
+    - polish over old bad sprites
+# pushes to a real web server 
+    - publish first test using github hosting 
+    - buy an domain
+    - upload and try and hack into server
+    - puslish first real verson 1.0.0
+# backend data base
+    - add player saving 
+    - add way to sign in
+    - add secirty for user
+    - add stats for everyone
+# updates with community input
+    - make first updates fast for people to see
+    - fix bugs
+    - try and make a steam page for game
+    - upload to steam with desktop mode 
