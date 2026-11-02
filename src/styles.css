@@ -1,0 +1,30 @@
+.MainPageRoot {
+  background-color: bisque;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+.GamePageRoot {
+  background-color: bisque;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.hstack {
+  border: 5px solid black;
+}
+
+.p-2.ms-auto {
+  margin-left: auto;
+}
+.GameHolder {
+  position: fixed;
+  top: 52px;
+  width: 100%;
+  height: calc(100% - 52px);
+  border: 5px solid black;
+  background-color: lightblue;
+}
