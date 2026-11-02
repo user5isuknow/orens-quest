@@ -1,7 +1,18 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
+import { createGame } from "../game.js";
 
 function GamePage() {
+  const gameHolderRef = useRef(null);
+
+  useEffect(() => {
+    const game = createGame(gameHolderRef.current);
+
+    return () => {
+      game.destroy(true);
+    };
+  }, []);
+
   return (
     <main className="GamePageRoot">
       <div className="hstack gap-1">
@@ -15,7 +26,7 @@ function GamePage() {
           settings
         </Link>
       </div>
-      <div className="GameHolder"></div>
+      <div className="GameHolder" ref={gameHolderRef}></div>
     </main>
   );
 }
