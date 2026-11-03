@@ -1,6 +1,6 @@
 import Phaser from "phaser";
-import playerImage from "./assests/test/warrior japans.png";
-import skyImage from "./assests/test/sky.png";
+import skyImage from "/src/assests/gameassests/test/sky.png";  
+
 
 function preload() {
   this.load.image("player", s);
@@ -17,8 +17,8 @@ export function createGame(parent) {
   return new Phaser.Game({
     type: Phaser.AUTO,
     parent,
-    width: getParentWidth(),
-    height: getParentHeight(),
+    width: 100,
+    height: 100,
     backgroundColor: "#000000",
     scene: {
       preload,
