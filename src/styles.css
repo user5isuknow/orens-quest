@@ -1,23 +1,186 @@
+:root {
+  --primary-color: #282828;
+  --secondary-color: black;
+  --accent-color: #2e3e64;
+  --text-color: #ffffff;
+}
+
 .MainPageRoot {
-  background-color: bisque;
+  background-color: var(--secondary-color);
   min-height: 1000vh;
   padding: 0;
   margin: 0;
   font-family: Motiva Sans;
-  overflow: hidden;
+  overflow: clip;
 }
+.TopHeaderBackground {
+  position: fixed;
+  top: 10px;
+  left: 30%;
+  width: 40%;
+  height: 64px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  background-color: var(--primary-color);
+  opacity: 0.8;
+  z-index: 10000;
+  border-radius: 10px;
+  animation: fadeInSoft linear;
+  animation-duration: 1s;
+}
+.MainTitle {
+  margin: 0;
+  font-size: 2rem;
+  font-size: 2rem;
+  line-height: 1;
+  opacity: 0.5;
+  color: var(--text-color);
+}
+.StartLink {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 2rem;
+  font-size: 2rem;
+  line-height: 1;
+  opacity: 0.5;
+}
+.StartLink:hover,
+.StartLink:focus-visible {
+  color: var(--text-color);
+  opacity: 1;
+}
+.divider {
+  position: relative;
+  left: 0;
+  top: 50px;
+  width: 100%;
+  height: 5px;
+  background-color: var(--accent-color);
+  opacity: 0.8;
+  z-index: 10000;
+  margin: 0 0 100px;
+  animation: fadeInSoft linear;
+  animation-duration: auto;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+.OpeningBanner {
+  position: relative;
+  max-width: 100%;
+}
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100dvh;
+  background-color: var(--secondary-color);
+}
+.orbit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  animation: spin 4s linear infinite;
+}
+.rectangle {
+  position: absolute;
+  top: -120px;
+  width: 10px;
+  height: 24px;
+  background: white;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.MainWelcomeTitle {
+  position: relative;
+  top: -100px;
+  text-align: center;
+  font-size: 3rem;
+  color: var(--text-color);
+  opacity: 0.8;
+}
+.itemBoxHolderOne {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  width: 100%;
+  max-height: 50rem;
+  top: 100px;
+}
+.ItemBoxOne {
+  position: relative;
+  display: block;
+  width: 50rem;
+  height: 50rem;
+  top: 100px;
+  background-color: var(--primary-color);
+  animation: flyIn linear;
+  animation-duration: auto;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+  border-radius: 10px;
+}
+.textBoxOne {
+  position: relative;
+  display: block;
+  width: 50rem;
+  height: 50rem;
+  top: 100px;
+  background-color: var(--accent-color);
+  animation: fadeInIntese linear;
+  animation-duration: auto;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+  border-radius: 10px;
+}
+@keyframes flyIn {
+  from {
+    translate: -1000px 0px;
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    translate: 0px 0px;
+    opacity: 1;
+    scale: 1;
+  }
+}
+@keyframes fadeInIntese {
+  from {
+    opacity: 0;
+    scale: 0.1;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+@keyframes fadeInSoft {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.8;
+  }
+}
+
 .GamePageRoot {
-  background-color: bisque;
+  background-color: var(--primary-color);
   min-height: 100vh;
   padding: 0;
   margin: 0;
   overflow: hidden;
 }
-
 .hstack {
-  border: 5px solid black;
+  border: 5px solid var(--primary-color);
 }
-
 .p-2.ms-auto {
   margin-left: auto;
 }
@@ -26,52 +189,9 @@
   top: 52px;
   width: 100%;
   height: calc(100% - 52px);
-  border: 5px solid black;
-  background-color: lightblue;
+  border: 5px solid var(--primary-color);
+  background-color: var(--primary-color);
 }
 .GameHolder canvas {
   display: block;
-}
-.TopHeaderBackground{
-  width: 100%;
-  height: 45px;
-  background-color: antiquewhite;
-
-
-}
-.MainTitle{
-  position: fixed;
-  top:0;
-  left: 10px;
-  font-size: 2rem;
-  opacity: .5;
-  z-index: 10000;
-}
-.StartLink{
-  position: fixed;
-  right: 10px;
-  top: -8px;;
-  font-size: 2rem;
-  padding: 0%;
-  margin: 0%;
-  border: 0;
-  opacity: .5;
-  max-height: 38px;
-  z-index: 10000;
-}
-.OpeningBanner{
-  position: relative;
-  max-width: 100%;
-}
-.banner{
-max-width: 100%;
-min-width: 100%;
-max-height:40rem
-}
-
-.ItemBox{
-  max-width: 10rem;
-  min-width: 10rem;
-  max-height: 10rem;
-  min-height: 10rem;
 }
