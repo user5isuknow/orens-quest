@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import "../HomePageStyles.css";
+import "./HomePageStyles.css";
 import { Link } from "react-router-dom";
 import useWindowSize from "../Components/windoeSize";
 import youtubeLinkImage from "../assests/WebPageComponites/youtubeLogo.png";
