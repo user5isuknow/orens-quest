@@ -11,7 +11,15 @@
   margin: 0;
   font-family: Motiva Sans;
   overflow: clip;
-  min-height: 1000rem;
+  min-height: 100%;
+}
+
+html {
+  scrollbar-width: none;
+}
+
+body {
+  background-color: var(--secondary-color);
 }
 .TopHeaderBackground {
   position: fixed;
@@ -185,8 +193,6 @@
 }
 .textBox2 {
   display: flex;
-
-  display: flex;
   flex-direction: column;
   align-items: center;
   width: 80rem;
@@ -195,14 +201,32 @@
   border-radius: 10px;
 }
 
-.textTwoLinks {
+.textTwoContent {
   display: flex;
-  position: relative;
-  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textTwoHeader {
+  margin: 1rem 0 0;
+  color: var(--text-color);
+  font-size: 2rem;
+}
+
+.textTwoLinks {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 1rem;
   color: var(--text-color);
   font-size: 2rem;
-  padding: 1rem;
+  text-decoration: none;
+}
+
+.textTwoLinks img {
+  display: block;
+
+  object-fit: contain;
 }
 
 @keyframes flyIn {
@@ -234,29 +258,4 @@
   to {
     opacity: 0.8;
   }
-}
-
-.GamePageRoot {
-  background-color: var(--primary-color);
-  min-height: 100vh;
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
-}
-.hstack {
-  border: 5px solid var(--primary-color);
-}
-.p-2.ms-auto {
-  margin-left: auto;
-}
-.GameHolder {
-  position: fixed;
-  top: 52px;
-  width: 100%;
-  height: calc(100% - 52px);
-  border: 5px solid var(--primary-color);
-  background-color: var(--primary-color);
-}
-.GameHolder canvas {
-  display: block;
 }

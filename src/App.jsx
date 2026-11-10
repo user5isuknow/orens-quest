@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles.css";
+
 import HomePage from "./pages/HomePage";
 import GamePage from "./pages/GamePage";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";

@@ -1,9 +1,11 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import "../styles.css";
+import "../HomePageStyles.css";
 import { Link } from "react-router-dom";
 import useWindowSize from "../Components/windoeSize";
-import youtubeLinkImage from "/src/assests/WebPageComponites/youtube-logo-png-svg-removebg-preview.png";
+import youtubeLinkImage from "../assests/WebPageComponites/youtubeLogo.png";
+import githubLinkLogo from "../assests/WebPageComponites/github-logo-550x70.png";
+import discordLinkLogo from "../assests/WebPageComponites/discord-logo-550x70.png";
 
 console.log(window.innerHeight);
 console.log(window.innerWidth);
@@ -50,23 +52,31 @@ function HomePage() {
       <div className="divider2"></div>
       <div className="itemBoxHolderTwo">
         <div className="textBox2">
-          <div>
-            <h2 className="textTwoLinks">Links </h2>
+          <div className="textTwoContent">
+            <h2 className="textTwoHeader">Links</h2>
+            <div className="divider1"></div>
             <a
               href="https://www.youtube.com/channel/UCuBCqjk81BdTKJGwGbPI32g"
               className="textTwoLinks"
             >
               <img src={youtubeLinkImage} alt="YouTube" />
             </a>
+            <div className="divider1"></div>
             <a
               href="https://github.com/user5isuknow/orens-quest"
               className="textTwoLinks"
             >
-              github
+              <img src={githubLinkLogo} alt="GitHub" />
             </a>
+            <div className="divider1"></div>
+            <a href="https://discord.gg/p8cxgTR4uy" className="textTwoLinks">
+              <img src={discordLinkLogo} alt="Discord" />
+            </a>
+            <div className="divider1"></div>
           </div>
         </div>
       </div>
+      <div className="divider1"></div>
     </main>
   );
 }
