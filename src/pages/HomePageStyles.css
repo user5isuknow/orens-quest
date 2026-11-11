@@ -54,6 +54,7 @@ body {
   font-size: 2rem;
   line-height: 1;
   opacity: 0.5;
+  text-align: top;
 }
 .StartLink:hover,
 .StartLink:focus-visible {
